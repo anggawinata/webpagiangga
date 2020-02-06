@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+}
+body{
+    background: rgb(253, 253, 253);
+}
+table{width: 100%;
+}
+#head{
+    font-weight: bold;
+    font-size: 25px;
+    background-color: rgb(253, 253, 253);
+    text-align: center;
+}
+.number1,.name1,.jenis1,.umur1{
+    font-weight: bold;
+    font-size: 25px;
+    background-color: rgb(235, 27, 27);
+    text-align: center
+}
+.nomor1,.nama1,.jk1,.lahir1,.nomor3,.nama3,.jk3,.lahir3{
+    font-weight: bold;
+    font-size: 25px;
+    background-color: rgb(214, 216, 214);
+    text-align: center
+}
+.nomor2,.nama2,.jk2,.lahir2,.nomor4,.nama4,.jk4,.lahir4{
+    font-weight: bold;
+    font-size: 25px;
+    background-color: rgb(243, 243, 243);
+    text-align: center
+}

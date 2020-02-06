@@ -1,0 +1,42 @@
+/* style css untuk navbar */
+*{
+    margin: 0;
+    padding: 0;
+
+.navbar{
+    background-color: aqua;
+    height: 100px;
+    width: 100%;
+    line-height: 30px;
+    position: relative;
+    margin: auto;
+    margin-top: -17px;
+
+}
+.navbar ul{
+    list-style: none;
+    background-color: #ffffff;
+}
+.navbar ul li a{
+    float: left;
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: aliceblue;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: x-large;
+    background-color: ;
+
+}
+.navbar ul li a :hover{
+    background-color: crimson;
+    display: block;
+    background-color: floralwhite;
+}
+li{
+
+
+}
+}

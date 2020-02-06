@@ -5,44 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: rgb(238, 232, 232);
+        }
+    </style>
 </head>
-<body bgcolor="#FFFFF0"> 
-    <Center><h1>CURRICULUM VITAE</h1></Center>
+<body> 
+    <!-- menu navbar -->
+    <div class="navbar">
+        <ul>
+            <li>
+                <a href="iframe.html" target="blank">Menu Frame</a>
+            </li>
+            <li>
+                <a href="form.html" target="blank">Form</a>
+                <ul>
+                    <li><a href="">Form Biodata</a></li>
+                    <li><a href="">Form Pendaftaran</a></li>
+                </ul>
+            </li>
+            <li>
+                <li><a href="form.html" target="blank">Login</a>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <Center>
+        <h1>CURRICULUM VITAE</h1></Center>
     <center>
     <table > 
         <!-- 1. Row Biodata & Foto-->
         <tr>
-            <td><b>BIODATA</b> <br><br>
-                <label> Nama</label> <br>
+            <td colspan="2" style="background-color: azure;">BIODATA<br></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <label class="gogo"> Nama</label> <br>
                 <label> Alamat</label> <br>
-                <label> Tgl. Lahir</label> <br>
-                <label> No. HP</label> <br>
-                <label> email</label> <br>
-            </td>
-            <td><br><br>
-                <label> : Anggawinata</label> <br>
-                <label> : Lambaro</label> <br>
-                <label> : 1* Apr 19**</label> <br>
-                <label> : 085221******</label> <br>
-                <label> : angga***@gmail.com</label> <br>
+                <label> Tgl. Lahir</label> 
             </td>
             <td>
-                <center><img src="img/jilbab cantik.jpg" width="100px"></center>
+                <label class="gogo"> : Angga</label> <br>
+                <label> : Pagar Air</label> <br>
+                <label> : 16 April</label> 
+            </td>
+            <td>
+                <img src="img/jilbab cantik.jpg" alt="">
             </td>
         </tr>
         <!-- 2. Row Pendidikan -->
         <tr>
-            <td><b> PENDIDIKAN<br><br></b>
+            <td colspan="2" style="background-color: azure;"> PENDIDIKAN <br></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
                 <label> Perguruan Tinggi </label> <br>
                 <label> SMA </label> <br>
                 <label> SMP </label> <br>
-                <label> SD  </label> <br>
+                <label style="color: indigo;"> SD  </label> 
             </td>
-            <td colspan="2"><br><br>
+            <td>
                 <label> : S1 Psikologi USU</label> <br>
                 <label> : SMA Negeri  3</label> <br>
                 <label> : SMP Negeri  3</label> <br>
-                <label> : SD Negeri  3</label> <br>
+                <label> : SD Negeri  3</label> 
+            </td>
+            <td>
+                <img src="" >
             </td>
         </tr>
         <!-- 3. Row Kemampuan dan pengalaman kerja -->
