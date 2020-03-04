@@ -229,3 +229,72 @@ Operator logika dan perbandingan dalam PHP -->
         echo "Nilai Huruf : A <br>";
     }
 ?>  
+<br>-------------------------------------------</br>
+<!-- Latihan  -->
+<?php
+
+    $tahun = date ("Y"); 
+    $kabisat = ($tahun%4 == 0) ? "KABISAT" : "BUKAN KABISAT"; 
+    echo "Tahun <b>
+    $tahun</b> $kabisat"; 
+
+?> 
+
+<br>-------------------------------------------</br>
+
+<!-- Struktur Kondisi If.  -->
+<?php 
+$nilai = 80; if ($nilai >= 60) {  
+    echo "Nilai Anda $nilai, Anda LULUS"; } 
+?>
+
+
+<br>-------------------------------------------</br>
+<!-- Struktur Kondisi If..Else -->
+
+<?php 
+
+$nilai = 50; if ($nilai >= 60) {  
+        echo "Nilai Anda $nilai, Anda LULUS"; 
+    } 
+    else {  
+        echo "Nilai Anda $nilai, Anda GAGAL"; } ?> 
+
+<br>-------------------------------------------</br>
+<!-- Memeriksa suatu variabel ada atau tidak.  -->
+
+<?php 
+
+$user=""; if (!isset($user)) {  
+    echo "Variabel tidak ada/belum terbentuk"; } 
+    else {  
+        echo "Variabel ada"; 
+ } ?>
+<br>-------------------------------------------</br>
+
+<!-- Memeriksa username dan password dengan If..Else -->
+
+ <?php 
+ $user = "achmatim"; $pass = "123"; 
+    if ($user == "achmatim" && $pass == "123") {  echo "Login Berhasil"; } 
+    else {  echo "Login Gagal"; } 
+ 
+ ?> 
+
+<br>-------------------------------------------</br>
+
+<!-- Struktur Switch..Case untuk menampilkan nama hari dalam bahasa Indonesia.  -->
+<?php 
+$day = date ("D"); 
+switch ($day) {  
+    case 'Sun' : $hari = "Minggu"; break;  
+    case 'Mon' : $hari = "Senin"; break;  
+    case 'Tue' : $hari = "Selasa"; break;  
+    case 'Wed' : $hari = "Rabu"; break;  
+    case 'Thu' : $hari = "Kamis"; break;  
+    case 'Fri' : $hari = "Jum'at"; break;  
+    case 'Sat' : $hari = "Sabtu"; break;  
+    default    : $hari = "Kiamat"; } 
+    echo "Hari ini hari <b>$hari</b>"; 
+
+?>
