@@ -13,18 +13,18 @@
             $tempat_lahir=$_POST['tempat_lahir'];
             $tanggal=$_POST['tanggal_lahir'];
             $no_hp=$_POST['nohp'];
-            $hobby1=$_POST['hobby1'];
-            $hobby2=$_POST['hobby2'];
-            $hobby3=$_POST['hobby3'];
-            $hobby=($hobby1.','.$hobby2.','.$hobby3);
+            $hobby1=(!empty($_POST['hobby1']))?$_POST['hobby1']:'';
+            $hobby2=(!empty($_POST['hobby2']))?$_POST['hobby2']:'';
+            $hobby3=(!empty($_POST['hobby3']))?$_POST['hobby3']:'';
+            $hobby=($hobby1.', '.$hobby2.', '.$hobby3);
             $jur=$_POST['jurusan'];
 
-            $nama_file= $_FILES['foto']['name'];
-    
-            $format= explode(".",$nama_file);
+            $foto= $_FILES['foto']['name'];
+            
+            $format= explode(".",$foto);
             $fileExtension= end($format);
             $nama_sementara= $_FILES['foto']['tmp_name'];
-            $md5file= md5($nama_file) . "." . $fileExtension;
+            $md5file= md5($foto) . "." . $fileExtension;
             // tentukan lokasi file akan dipindahkan
             $lokasi_upload = "../terupload/";
 
@@ -33,7 +33,7 @@
             
             $query=mysqli_query($koneksi,"INSERT INTO biodata VALUES('$id_username','$id_user','$nama_saya','$email_saya','$jenis_kelamin','$alamat','$tempat_lahir', '$tanggal','$no_hp','$hobby','$jur','$md5file')")or die(mysqli_error($query));
             
-            if($query){
+            if ($query){
 
                 echo "<script>alert('data anda berhasil di masukkan');
                 window.location.href='biodata.php';

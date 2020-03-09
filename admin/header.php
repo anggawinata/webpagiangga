@@ -25,8 +25,8 @@
     <link href="css/pages/dashboard1.css" rel="stylesheet">
     <!-- page css -->
     <link href="css/pages/icon-page.css" rel="stylesheet">
-    <!-- page css -->
-    <link href="css/pages/google-vector-map.css" rel="stylesheet">
+     <!-- page css -->
+     <link href="css/pages/google-vector-map.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
     <link href="css/colors/default.css" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -60,20 +60,20 @@
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.php">
+                    <a class="navbar-brand" href="index.html">
                         <!-- Logo icon --><b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
-                            <img src="assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            
                             <!-- Light Logo icon -->
                             <img src="assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text --><span>
-                            <!-- dark Logo text -->
-                            <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                            <!-- Light Logo text -->    
-                            <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span> </a>
+                         <!-- dark Logo text -->
+                         <img src="assets/images/9.jpg" width='60px' alt="homepage" class="dark-logo" />
+                         <!-- Light Logo text -->    
+                         <img src="assets/images/logo-light-text.png" width=10px class="light-logo" alt="homepage" /></span> </a>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
@@ -100,7 +100,7 @@
                         <!-- Profile -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown u-pro">
-                            <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/1.jpg" alt="user" class="" /> <span class="hidden-md-down">Mark Sanders &nbsp;</span> </a>
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/9.jpg" alt="user" class="" /> <span class="hidden-md-down">Del Coffee &nbsp;</span> </a>
                         </li>
                     </ul>
                 </div>
@@ -120,26 +120,23 @@
                     <ul id="sidebarnav">
                         <li> <a class="waves-effect waves-dark" href="index.php" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="pages-profile.php" aria-expanded="false"><i class="fa fa-user-circle-o"></i><span class="hide-menu">Profile</span></a>
+                        <li> <a class="waves-effect waves-dark" href="biodata_admin.php" aria-expanded="false"><i class="fa fa-user-circle-o"></i><span class="hide-menu">Data</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="table-biodata.php" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Tables</span></a>
+                        <li> <a class="waves-effect waves-dark" href="table-biodata.php" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Table Data</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="icon-fontawesome.php" aria-expanded="false"><i class="fa fa-smile-o"></i><span class="hide-menu">Icons</span></a>
+                        <li> <a class="waves-effect waves-dark" href="barang.php" aria-expanded="false"><i class="fa fa-user-circle-o"></i><span class="hide-menu">Goods</span></a>
+                        </li>                      
+                        <li> <a class="waves-effect waves-dark" href="tabel_barang.php" aria-expanded="false"><i class="fa fa-smile-o"></i><span class="hide-menu">Table Goods</span></a>
                         </li>
                         <li> <a class="waves-effect waves-dark" href="map-google.php" aria-expanded="false"><i class="fa fa-globe"></i><span class="hide-menu">Map</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="pages-blank.php" aria-expanded="false"><i class="fa fa-bookmark-o"></i><span class="hide-menu">Blank</span></a>
-                        </li>
-                        <li> <a class="waves-effect waves-dark" href="pages-error-404.php" aria-expanded="false"><i class="fa fa-question-circle"></i><span class="hide-menu">404</span></a>
-                        </li>
+                        
                     </ul>
                     <div class="text-center m-t-30">
-                        <a href="https://wrappixel.com/templates/adminwrap/" class="btn waves-effect waves-light btn-info hidden-md-down"> Upgrade to Pro</a>
+                        <a href="https://wrappixel.com/templates/adminwrap/" class="btn waves-effect waves-light btn-info hidden-md-down"> Logout</a>
                     </div>
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
             <!-- End Sidebar scroll-->
         </aside>
-        <!-- ============================================================== -->
-        <!-- End Left Sidebar - style you can find in sidebar.scss  -->

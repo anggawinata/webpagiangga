@@ -35,22 +35,7 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <?php
-                $nampildata=mysqli_query($koneksi, "SELECT * FROM biodata") or die(mysqli_error($nampildata));
                 
-                if (mysqli_num_rows($nampildata)==0){
-                    echo'<tr>data kosong</tr>';
-                }   else{
-
-
-                }
-
-                
-                while ($data=mysqli_fetch_assoc($nampildata))
-
-
-
-                ?>
                 <div class="row">
                     <!-- column -->
                     <div class="col-12">
@@ -72,35 +57,49 @@
                                                 <th>No Handphone</th>
                                                 <th>Hobby</th>
                                                 <th>Jurusan</th>
-
+                                                <th>Foto</th>
+                                                <th>Delete</th>
                                             </tr>
                                         </thead>
+                                        <?php
+                                            $nampildata=mysqli_query($koneksi, "SELECT * FROM biodata")or die(mysqli_error($nampildata));
+
+                                            if(mysqli_num_rows($nampildata)==0){
+                                                echo'<tr>data kosong</tr>';
+                                            }else{
+                                                $no=1;
+                                                while ($data=mysqli_fetch_assoc($nampildata)) {
+
+                                        ?>
                                         <tbody>
                                             <tr>
-                                                <td>1</td>
-                                                <td>Deshmukh</td>
-                                                <td>Prohaska</td>
-                                                <td>@Genelia</td>
+                                                <td><?php echo $no;?></td>
+                                                <td><?php echo $data['nama']?></td>
+                                                <td><?php echo $data['email']?></td>
+                                                <td><?php echo $data['jenis_kelamin']?></td>
+                                                <td><?php echo $data['alamat']?></td>
+                                                <td><?php echo $data['tempat_lahir']?></td>
+                                                <td><?php echo $data['tanggal_lahir']?></td>
+                                                <td><?php echo $data['nohp']?></td>
+                                                <td><?php echo $data['hobby']?></td>
+                                                <td><?php echo $data['jurusan']?></td>
+                                                <td><?php echo"<img width='50px' src='../terupload/".$data['foto']."'>";?></td>
+                                                <td><a href="../php/biodata_proses_hapus.php?id_biodata=<?php echo $data['id_biodata']?>" type="submit" class="btn btn-danger">Delete </a></td>
                                             </tr>
                                         </tbody>
-                                            <tr>
-                                                <td><?php echo $no;?</td>
-                                                
-                                                <td><?php echo img;?</td>
-
-
-                                            </tr>
-
+                                        <?php 
+                                            $no++;
+                                                }
+                                        
+                                            }
+                                        ?>
                                     </table>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <?php
-                $no++;
-                }   
-                ?>
+                
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->
@@ -112,7 +111,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 Adminwrap by wrappixel.com
+                © 2020 delcoffee.com
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
